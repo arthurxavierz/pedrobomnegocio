@@ -1216,26 +1216,25 @@ button {
 .site-footer { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 22px 40px; padding: 34px clamp(24px,5vw,78px); color: var(--white); background: var(--ink); border-top: 1px solid rgba(255,255,255,.12); }
 .site-footer > p { justify-self: center; margin: 0; text-align: center; color: rgba(255,255,255,.34); font-size: .58rem; font-weight: 800; letter-spacing: .14em; }
 .site-footer__links { display: flex; gap: 20px; font-size: .62rem; font-weight: 900; letter-spacing: .1em; }
-.site-footer__legal { display: block; margin-top: 9px; font-size: .55rem; font-weight: 700; letter-spacing: .09em; line-height: 1.6; opacity: .72; }
-
-/* ASSINATURA DA AGENCIA */
-.site-footer__credit {
+/* Linha de base: CNPJ e assinatura da agencia, ambos discretos e no mesmo peso. */
+.site-footer__base {
   grid-column: 1 / -1;
-  justify-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 24px;
   width: 100%;
-  padding-top: 20px;
-  text-align: center;
-  border-top: 1px solid rgba(255,255,255,.08);
-  color: rgba(255,255,255,.3);
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,.07);
+  color: rgba(255,255,255,.26);
   font-size: .56rem;
-  font-weight: 700;
-  letter-spacing: .13em;
-  text-transform: uppercase;
-  transition: color .3s ease;
+  font-weight: 600;
+  letter-spacing: .08em;
 }
-.site-footer__credit b { color: rgba(255,255,255,.55); font-weight: 900; transition: color .3s ease; }
-.site-footer__credit:hover { color: rgba(255,255,255,.55); }
-.site-footer__credit:hover b { color: var(--yellow); }
+.site-footer__base small { font: inherit; letter-spacing: inherit; }
+.site-footer__credit { color: inherit; transition: color .25s ease; }
+.site-footer__credit:hover { color: rgba(255,255,255,.5); }
 
 .proposal-modal {
   width: min(760px, calc(100% - 30px));
@@ -1505,7 +1504,7 @@ button {
   .final-cta__vote { justify-self: start; box-shadow: 12px 12px 0 var(--green); }
   .site-footer { grid-template-columns: 1fr; justify-items: start; gap: 26px; }
   .site-footer > p { justify-self: start; text-align: left; line-height: 1.6; }
-  .site-footer__credit { justify-self: stretch; text-align: left; }
+  .site-footer__base { justify-content: flex-start; gap: 5px 20px; }
   .loader__brand { align-items: flex-start; flex-direction: column; }
   .loader__number { font-size: 5.6rem; }
   .subhero,.subhero--about { grid-template-columns: 1fr; min-height: auto; padding: 130px 20px 85px; }
