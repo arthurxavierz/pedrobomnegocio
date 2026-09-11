@@ -28,6 +28,19 @@
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
+# CSS e JS ficam na raiz (fora de /assets) e por isso não são versionados
+# por caminho: precisam revalidar a cada visita, senão o navegador serve
+# o HTML novo com a folha de estilo antiga.
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
 # URLs limpas: /propostas -> /propostas.html
 [[redirects]]
   from = "/propostas"
