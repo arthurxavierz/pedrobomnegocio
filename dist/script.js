@@ -69,11 +69,11 @@ const proposalContent = {
     number: '05',
     tag: 'DESENVOLVIMENTO REGIONAL',
     title: 'MUNICÍPIOS FORTES',
-    copy: 'Um mandato presente pode ajudar cidades a organizar prioridades e acessar oportunidades para projetos importantes.',
+    copy: 'Somar forças aos prefeitos para conquistar recursos e tirar do papel os projetos prioritários de cada cidade.',
     items: [
-      'Manter canais permanentes de escuta com municípios e entidades locais.',
-      'Acompanhar projetos prioritários com transparência e responsabilidade.',
-      'Apoiar a construção técnica de soluções para demandas regionais.'
+      'Trabalhar com os prefeitos acima das diferenças políticas e partidárias.',
+      'Ajudar os municípios a conquistar recursos para projetos prioritários.',
+      'Estar presente durante todo o mandato, e não apenas em período eleitoral.'
     ]
   },
   jovens: {
@@ -256,9 +256,9 @@ const proposalDetails = {
   },
   municipios: {
     index: '05', tag: 'DESENVOLVIMENTO REGIONAL', title: 'MUNICÍPIOS FORTES',
-    copy: 'Um mandato presente pode ajudar cidades a organizar prioridades e acessar oportunidades para projetos importantes.',
-    why: 'Cada município conhece seus desafios. A representação estadual deve aproximar conhecimento técnico, diálogo e recursos.',
-    items: ['Canais permanentes de escuta com municípios e entidades.','Acompanhamento transparente de projetos prioritários.','Apoio técnico para demandas regionais.']
+    copy: 'Somar forças aos prefeitos para conquistar recursos e tirar do papel os projetos prioritários de cada cidade.',
+    why: 'Somos passageiros. O prefeito muda, o povo fica: por isso o compromisso com a cidade precisa valer independente de quem estiver na prefeitura.',
+    items: ['Trabalho com os prefeitos acima das diferenças partidárias.','Apoio aos municípios para conquistar recursos.','Presença durante todo o mandato, não só na eleição.']
   },
   jovens: {
     index: '06', tag: 'FUTURO E OPORTUNIDADE', title: 'JOVENS QUE REALIZAM',
