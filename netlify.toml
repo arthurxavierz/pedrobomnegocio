@@ -54,6 +54,10 @@
   from = "/participe"
   to = "/participe.html"
   status = 200
+[[redirects]]
+  from = "/gerador"
+  to = "/gerador.html"
+  status = 200
 
 # 404 personalizado
 [[redirects]]
